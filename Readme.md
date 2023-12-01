@@ -59,40 +59,9 @@ Before running the script, ensure you have the following installed:
     python insta_automation_script.py
     ```
 
-### License
+### Alternative Usage
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+You can also run the script with command-line arguments:
 
-## Acknowledgments
-
-- [Instagram Graph API Documentation](https://developers.facebook.com/docs/instagram-api/)
-
-## Contributing
-
-If you'd like to contribute, please fork the repository and submit a pull request. Issues and feature requests are welcome!
-
-## Support
-
-If you encounter any issues or have questions, feel free to [create an issue](https://github.com/mahirahmed691/social-bot/issues/new). Your feedback is valuable for continuous improvement.
-
-## Additional Details
-
-### Uploading Images
-
-The script supports a variety of image formats, including JPEG, PNG, and GIF. Ensure your image file is located in the specified file path.
-
-### Caption Guidelines
-
-Craft compelling captions to enhance your post's engagement. You can include emojis, hashtags, and mentions to make your captions more engaging and discoverable.
-
-### Linking Strategy
-
-Including a link in your post can drive traffic to external content. Ensure the link is valid and relevant to your post.
-
-### Troubleshooting
-
-If you encounter any issues during the execution of the script, refer to the [troubleshooting guide](docs/troubleshooting.md) for common solutions.
-
-### Advanced Configuration
-
-For advanced users, explore the [configuration options](docs/configuration.md) available in the script to tailor it to your specific needs.
+```bash
+python insta_automation_script.py path/to/photo.jpg "Your caption here" "https://your-link.com"

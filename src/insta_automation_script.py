@@ -1,5 +1,6 @@
+import sys
 import requests
-import json  # Import the json module
+import json
 
 # Instagram API endpoint URLs
 upload_url = "https://graph.instagram.com/v12.0/me/media"
@@ -47,11 +48,15 @@ def publish_photo(media_id, caption, link):
 
 # Example usage
 if __name__ == "__main__":
-    file_path = '../photos/astronaut.jpg'  # Replace with the actual file path of your photo
-    caption = 'Your caption here'
-    link = 'https://your-link.com'  # Replace with your actual link
+    if len(sys.argv) < 4:
+        print("Usage: python insta_automation_script.py <file_path> <caption> <link>")
+        sys.exit(1)
+
+    file_path = sys.argv[1]
+    caption = sys.argv[2]
+    link = sys.argv[3]
 
     media_id = upload_photo(file_path)
-    
+
     if media_id:
         publish_photo(media_id, caption, link)
